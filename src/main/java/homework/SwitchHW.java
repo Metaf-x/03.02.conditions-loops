@@ -9,34 +9,17 @@ public class SwitchHW {
     public static String weekdayFromNumber() {
         System.out.print("Введите номер дня недели: ");
         int day = scanner.nextInt();
-        String result;
 
-        switch (day) {
-            case 1:
-                result = "Понедельник";
-                break;
-            case 2:
-                result = "Вторник";
-                break;
-            case 3:
-                result = "Среда";
-                break;
-            case 4:
-                result = "Четверг";
-                break;
-            case 5:
-                result = "Пятница";
-                break;
-            case 6:
-                result = "Суббота";
-                break;
-            case 7:
-                result = "Воскресенье";
-                break;
-            default:
-                result = "Такого дня недели не существует";
-        }
-        return result;
+        return switch (day) {
+            case 1 -> "Понедельник";
+            case 2 -> "Вторник";
+            case 3 -> "Среда";
+            case 4 -> "Четверг";
+            case 5 -> "Пятница";
+            case 6 -> "Суббота";
+            case 7 -> "Воскресенье";
+            default -> "Такого дня недели не существует";
+        };
     }
 
     public static String priceByDay() {

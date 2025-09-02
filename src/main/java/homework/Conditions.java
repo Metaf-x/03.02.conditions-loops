@@ -25,7 +25,7 @@ public class Conditions {
         System.out.print("Введите второе число: ");
         int b = scanner.nextInt();
 
-        String result = "";
+        String result;
 
         if (a > b) {
             result = "Первое число больше второго";
@@ -41,23 +41,20 @@ public class Conditions {
         System.out.print("Введите оценку: ");
         int grade = scanner.nextInt();
 
-        String result = switch (grade) {
+        return switch (grade) {
             case 5 -> "Отлично";
             case 4 -> "Хорошо";
             case 3 -> "Удовлетворительно";
             case 2, 1 -> "Неудовлетворительно";
             default -> "Нет такой оценки";
         };
-
-        return result;
     }
 
     public static boolean isEven() {
         System.out.print("Введите число: ");
         int number = scanner.nextInt();
-        boolean isEven = number % 2 == 0;
 
-        return isEven;
+        return number % 2 == 0;
     }
 
     public static void calcDiscountFromAge() {
@@ -78,7 +75,7 @@ public class Conditions {
     public static String testResultToWords() {
         System.out.print("Введите оценку: ");
         int grade = scanner.nextInt();
-        String result = "";
+        String result;
 
         if (grade > 100 || grade < 0) {
             result = "Неверная оценка";
@@ -87,9 +84,9 @@ public class Conditions {
 
         if (grade >= 90) {
             result = "Отлично";
-        } else if (grade <= 89 && grade >= 75) {
+        } else if (grade >= 75) {
             result = "Хорошо";
-        } else if (grade <= 74 && grade >= 60) {
+        } else if (grade >= 60) {
             result = "Удовлетворительно";
         } else {
             result = "Неудовлетворительно";
@@ -104,7 +101,7 @@ public class Conditions {
 //        System.out.println(gradeNumberToWord());
 //        System.out.println(isEven());
 //        calcDiscountFromAge();
-//        System.out.println(testResultToWords());
+        System.out.println(testResultToWords());
     }
 
 }
