@@ -11,7 +11,7 @@ public class WhileHW {
         int number = scanner.nextInt();
         int factorial = 1;
 
-        while(number >= 1) {
+        while (number >= 1) {
             factorial *= number;
             number--;
         }
@@ -23,7 +23,7 @@ public class WhileHW {
         System.out.print("Введите число: ");
         int number = scanner.nextInt();
 
-        if(number < 2) {
+        if (number < 2) {
             System.out.println("Нет четных чисел");
             return;
         }
@@ -40,7 +40,7 @@ public class WhileHW {
         System.out.print("Введите число: ");
         int maxNumber = scanner.nextInt();
 
-        while(maxNumber >= 1) {
+        while (maxNumber >= 1) {
             System.out.print(maxNumber-- + " ");
         }
     }

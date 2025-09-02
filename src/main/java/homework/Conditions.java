@@ -10,9 +10,9 @@ public class Conditions {
         System.out.print("Введите число: ");
         int number = scanner.nextInt();
 
-        if(number > 0) {
+        if (number > 0) {
             System.out.println("Число положительное");
-        } else if(number < 0) {
+        } else if (number < 0) {
             System.out.println("Число отрицательное");
         } else {
             System.out.println("Число равно нулю");
@@ -27,9 +27,9 @@ public class Conditions {
 
         String result = "";
 
-        if(a > b) {
+        if (a > b) {
             result = "Первое число больше второго";
-        } else if(b > a) {
+        } else if (b > a) {
             result = "Второе число больше первого";
         } else {
             result = "Числа равны";
@@ -41,7 +41,7 @@ public class Conditions {
         System.out.print("Введите оценку: ");
         int grade = scanner.nextInt();
 
-        String result = switch(grade) {
+        String result = switch (grade) {
             case 5 -> "Отлично";
             case 4 -> "Хорошо";
             case 3 -> "Удовлетворительно";
@@ -65,7 +65,7 @@ public class Conditions {
         int age = scanner.nextInt();
         int discount;
 
-        if(age < 18) {
+        if (age < 18) {
             discount = 25;
         } else if (age >= 65) {
             discount = 30;
@@ -80,16 +80,16 @@ public class Conditions {
         int grade = scanner.nextInt();
         String result = "";
 
-        if(grade > 100 || grade < 0) {
+        if (grade > 100 || grade < 0) {
             result = "Неверная оценка";
             return result;
         }
 
-        if(grade >= 90) {
+        if (grade >= 90) {
             result = "Отлично";
         } else if (grade <= 89 && grade >= 75) {
             result = "Хорошо";
-        } else if (grade <= 74 && grade >=60) {
+        } else if (grade <= 74 && grade >= 60) {
             result = "Удовлетворительно";
         } else {
             result = "Неудовлетворительно";

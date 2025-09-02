@@ -12,21 +12,29 @@ public class SwitchHW {
         String result;
 
         switch (day) {
-            case 1: result = "Понедельник";
+            case 1:
+                result = "Понедельник";
                 break;
-            case 2: result = "Вторник";
+            case 2:
+                result = "Вторник";
                 break;
-            case 3: result = "Среда";
+            case 3:
+                result = "Среда";
                 break;
-            case 4: result = "Четверг";
+            case 4:
+                result = "Четверг";
                 break;
-            case 5: result = "Пятница";
+            case 5:
+                result = "Пятница";
                 break;
-            case 6: result = "Суббота";
+            case 6:
+                result = "Суббота";
                 break;
-            case 7: result = "Воскресенье";
+            case 7:
+                result = "Воскресенье";
                 break;
-            default: result = "Такого дня недели не существует";
+            default:
+                result = "Такого дня недели не существует";
         }
         return result;
     }
@@ -37,7 +45,7 @@ public class SwitchHW {
 
         String price;
 
-        switch(day) {
+        switch (day) {
             case 1, 2, 3, 4, 5 -> price = "Стоимость: 300 рублей";
             case 6, 7 -> price = "Стоимость: 450 рублей";
             default -> price = "Неверный день недели";
